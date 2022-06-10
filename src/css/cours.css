@@ -1,0 +1,383 @@
+/* Cours not exist CSS */
+
+.not-exist {
+    position: relative;
+    color: white;
+    padding: 15px;
+    margin-top: 130px;background-color: #ff00002b;
+    border-radius: 5px;
+    transition: opacity 1s;
+    animation: fadeIn 2s ease;
+}
+
+.exist-title {
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.exist-strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.exist-msg {
+    font-size: 18px;
+    font-style: italic;
+    margin: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.offers-exist-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.offers-notExist {
+    position: relative;
+    padding: 20px 20px 0;
+    background-color: #27282c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.8s ease;
+    max-width: 500px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color .2s ease, transform .2s ease;
+    border-bottom: 3px #646eec solid;
+}
+
+.offers-notExist:hover {
+    background-color: #1f2023;
+    transform: scale(1.1);
+}
+
+.offers-exist-title {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    user-select: none;
+}
+
+.btn-exist {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #00ff262b;
+    box-shadow: 0 0 5px #00ff262b, inset 0px 5px 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color .2s ease, box-shadow .2s ease, transform .9s ease;
+    transform: rotate3d(0, 1, 0, 0deg) scale(0.9);
+}
+
+.btn-exist:hover {
+    background-color: #00ff2645;
+    box-shadow: 0 0 15px #00ff262b, inset 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transform: rotate3d(0, 1, 0, 360deg) scale(1.2);
+}
+
+.offers-notExist ul {
+    margin: 0;
+    padding: 0;
+}
+
+.offers-notExist li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.offers-notExist > ul > li > a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+.offers-notExist > ul > li > a:hover {
+    color: #0077ff;
+    text-decoration: underline;
+}
+
+.exist-msg::selection,
+.offers-exist-container ul > li::selection,
+.not-exist ul > li::selection {
+    background-color: #00000079;
+    color: white;
+}
+
+/* Others */
+.cours_container {
+    position: relative;
+    user-select: none;
+    margin-top: 70px;
+}
+
+main pre code.hljs {
+    background-color: #202226;
+    padding: 20px;
+    transition: background-color .3s ease, transform .3s ease, border-radius .3s ease;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    border-radius: 3px;
+    margin: 30px;
+}
+
+main pre code.hljs:hover, main pre code.hljs:active, main pre code.hljs:focus {
+    background-color: #25272c;
+    border-radius: 10px;
+    transform: scale(0.99);
+}
+
+main pre code.hljs::-moz-selection {
+  background: #00000091;
+}
+main pre code.hljs::selection {
+  background: #00000091;
+}
+
+.bottom-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 280px;
+    background-color: green;
+    z-index: 100;
+    text-align: center;
+    text-shadow: 1px 1px 2px #00000080;
+    padding: 10px;
+    opacity: 0;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.top-error {
+    
+    
+    
+    position: relative;background-color: #6f0909;
+    color: white;
+    
+    text-align: center;
+    text-shadow: 1px 1px 2px #0000007c;
+    padding: 10px;
+    
+    
+    user-select: none;
+    font-weight: bold;
+}
+
+.cours_code {
+    position: relative;
+    padding: 70px;
+}
+
+span[data-title] {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+span[data-title], 
+span[data-desc] {
+    user-select: text;
+}
+
+.cours_container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cours_container h1 > sup {
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.video-iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .cours_container {
+        margin-top: 30px;
+    }
+
+    .cours_container iframe {
+        height: 400px;
+    }
+}
+
+.comments-container {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-one {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-text {
+    position: relative;
+    background-color: #25272c;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 10px;
+    resize: none;
+    user-select: text;
+    transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.comment-text:focus, 
+.comment-text:hover, 
+.submit-comment:hover {
+    box-shadow: 0 0 10px #a8bbff82;
+    transform: scale(0.98)
+}
+
+.submit-comment {
+    position: relative;
+    background-color: #6b89f7;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 20px;
+    user-select: none;
+    transition: box-shadow .3s ease, transform .3s ease;
+    cursor: pointer;
+}
+
+.comments {
+    position: relative;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    background-color: #25272c;
+    border-radius: 7px;
+    user-select: none;
+    margin: 20px;
+}
+
+.comments-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user-logo {
+    position: relative;
+    border-radius: 100px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.author-comments {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.comments-text {
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    user-select: text;
+}
+
+.comments-text a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+.comments-text a:hover {
+    color: #a9b0b4;
+    text-decoration: underline;
+}
+
+.response-comments {
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 0 0 2px black;
+    background-color: #6b89f7;
+    transition: opacity .3s ease;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.response-comments:hover {
+    opacity: 0.5;
+}
+
+.modal-comments {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #35373d;
+    border-radius: 5px;
+}
+
+.close-modal-comments {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease, color .2s ease;
+}
+
+.close-modal-comments:hover {
+    transform: scale(1.3);
+    color: #5e0707;
+}
+
+.modal-title {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

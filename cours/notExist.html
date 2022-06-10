@@ -1,0 +1,33 @@
+<div class="not-exist">
+    <span class="exist-title"><i class="fas fa-info"></i> Le cours demander n'existe pas!</span>
+    <p class="exist-msg">
+        Il peux y avoir plusieurs raison pour lesquels vous n'avez pas accès aux cours!
+        <ul>
+            <li>Le cours n'existe pas dans la base de données!</li>
+            <li>Vous n'êtes pas connecter et n'avez donc pas accès au cours payants!</li>
+            <li>Vous avez un problème avec votre navigateur!</li>
+        </ul>
+    </p>
+</div>
+<div class="offers-exist-container">
+    <div class="offers-notExist">
+        <h1 class="offers-exist-title">Acheter vos compétences</h1>
+        <p class="exist-msg">
+            Si vous souhaitez apprendre le développement cette offre est faite pour vous, il vous suffit de payer <span class="exist-strong">7 euros</span> une seul fois et vous aurez accès définitivement a nos cours en ligne.
+        </p>
+        <span class="offers-exist-title"><i class="fas fa-box-open"></i> Contient</span>
+        <ul>
+            <li>Cours en ligne</li>
+            <li>
+                Apprentissage <a href="https://www.lua.org" title="Lua" target="_blank">Lua</a>, 
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" title="HTML" target="_blank">HTML</a>, 
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" title="CSS" target="_blank">CSS</a>, 
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" title="Javascript" target="_blank">Javascript</a> 
+            </li>
+        </ul>
+        <form action="../payment" method="post">
+            <input type="hidden" name="course" value="notExist">
+            <input type="submit" value="Acheter 7€" class="btn-exist">
+        </form>
+    </div>
+</div>

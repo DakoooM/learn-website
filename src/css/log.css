@@ -1,0 +1,103 @@
+.register_container > form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+    user-select: none;
+}
+
+.register_container input {
+    margin: 10px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.register_container input:focus,
+.register_container input:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #728dedd1;
+}
+
+.register_container label {
+    margin: 5px;
+}
+
+.register_container input[type="email"], 
+.register_container input[type="password"],
+.register_container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: white;
+    background-color: #212327;
+    border-radius: 3px;
+    font-size: 20px;
+    box-shadow: inset 0 0 50px #728ded14;
+}
+
+.register_container input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: white;
+    background-color: #556fca;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.success_created {
+    padding: 10px;
+    color: white;
+    background-color: #00800085;
+    border-radius: 3px;
+    user-select: text;
+}
+
+.error_created {
+    padding: 10px;
+    color: white;
+    background-color: #80000085;
+    border-radius: 3px;
+    user-select: text;
+}
+
+.success_created::selection,
+.error_created::selection {
+    background-color: #0000007f;
+}
+
+.register_container label {
+    color: white;
+    font-weight: bold;
+}
+
+.register_container span[id="mailValid"] {
+    color: white;
+    background-color: #41444a;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.register_container span[id="passwordValid"] {
+    color: white;
+    background-color: #41444a;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.register_container span[id="passwordValid"] ul {
+    list-style: none;
+}
+
+.register_container span[id="passwordValid"] > ul li {
+    margin: 5px;
+    user-select: text;
+}

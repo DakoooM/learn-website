@@ -1,0 +1,12 @@
+[
+    {
+        "auteur": "J'aime pas", 
+        "content": "Je suis jolie\net j'aime les chats",
+        "replies": []
+    },
+    {
+        "auteur": "J'aime bien", 
+        "content": "Je suis moche\net j'aime les chien",
+        "replies": []
+    }
+]
