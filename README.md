@@ -1,2 +1,2 @@
-# dakomV2web
-website for my discord community unfinished
+# learn-website
+website for learn coding for my discord community unfinished
